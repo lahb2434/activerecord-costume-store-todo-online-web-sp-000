@@ -3,7 +3,7 @@
 class CreateCostumeStores < ActiveRecord::Migration[5.2]
   
   def change 
-    create table :costume_stores do |table|
+    create_table :costume_stores do |table|
       table.string :name 
       table.string :location
       table.integer :costume_inventory
