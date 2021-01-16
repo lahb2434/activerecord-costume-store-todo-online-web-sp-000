@@ -3,15 +3,15 @@
 class CreateHauntedHouses < ActiveRecord::Migration[5.2]
   
   def change 
-    create_table :haunted_house do |table|
-      table.string :name
-      table.string :location
-      table.string :theme
-      table.float :price
-      table.boolean :family_friendlty
-      table.date :opening_date
-      table.date :closing_date
-      table.text :description, limit: 16.megabytes-1
+    create_table :haunted_house do |t|
+      t.string :name
+      t.string :location
+      t.string :theme
+      t.float :price
+      t.boolean :family_friendlty
+      t.date :opening_date
+      t.date :closing_date
+      t.text :description, limit: 16.megabytes-1
     end
   end
   
