@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 3) do
+ActiveRecord::Schema.define(version: 2) do
 
   create_table "costume_stores", force: :cascade do |t|
     t.string "name"
@@ -27,17 +27,6 @@ ActiveRecord::Schema.define(version: 3) do
     t.float "price"
     t.string "size"
     t.string "image_url"
-  end
-
-  create_table "haunted_house", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.string "theme"
-    t.float "price"
-    t.boolean "family_friendlty"
-    t.date "opening_date"
-    t.date "closing_date"
-    t.text "description", limit: 4294967295
   end
 
 end
