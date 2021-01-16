@@ -11,7 +11,7 @@ class CreateHauntedHouses < ActiveRecord::Migration[5.2]
       t.boolean :family_friendlty
       t.date :opening_date
       t.date :closing_date
-      t.text :description, limit: 700000
+      t.text :description, limit: 4294967295
     end
   end
   
